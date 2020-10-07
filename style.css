@@ -1,0 +1,248 @@
+:root {
+--basic-black: #000000;
+--basic-white: #ffffff;
+--basic-blue: #293449;
+--background-grey: #F1F5F7;
+--green: #63A63E;
+--basic-red: #EE3643;
+--catalog-yellow: #FFBF47;
+--light-blue: #3BBCE3;
+--light-pink: #DC91D8;
+--light-green: #8ED78F;
+--light-grey: #F9F5F0;
+--yellow: #FFD180;
+--dark-blue: #32425C;
+--darkest-blue: #212A3A;
+--blue-click: #161D29;
+--green-click: #63A63E;
+--green-hover: #5FBB2D;
+--red-error: #BA2732;
+--red-hover: #CA2C37;
+--yellow-footer: #FFD180;
+--grey-price: #A9A9A9;
+}
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background-color: var(--basic-black);
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .button{
+      background-color: var(--basic-red);
+      color: var(--basic-white);
+  }
+  .main-header{
+    background-color: rgba(0, 0, 0, 0.0001);
+  }
+  .menu-wrapper {
+    background-color: var(--basic-blue);
+    width: 1200px;
+    height: 42px;
+}
+.logo-wrapper {
+    width: 220px;
+    height: 47px;
+    background-color: var(--basic-red);
+}
+.menu-list {
+    list-style: no-style;
+}
+.order {
+    background-color: var(--green);
+}
+.h1 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--basic-red);
+}
+.telephone-number {
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--basic-white);
+}
+.main-navigation {
+        font-family: "Cuprum", Arial, sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        color: var(--basic-white);
+        background-color: var(--basic-blue);
+    }
+    .features-header {
+        font-family: "Cuprum", Arial, sans-serif;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 700;
+        color: var(--basic-white);
+    }
+    .materials {
+        background-color: var(--yellow);
+    }
+    .instruments {
+        background-color: var(--light-blue);
+    }
+    .appliances {
+        background-color: var(--light-pink);
+    }
+    .sales {
+        background-color: var(--light-green);
+    }
+    .delivery {
+        background-color: var(--yellow);
+    }
+    .slider-header{
+        font-family: "Cuprum", Arial, sans-serif;;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 36px;
+
+    }
+    .slider-description{
+        font-family: "Cuprum", Arial, sans-serif;;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .popular-items-wrapper {
+        background-color: var(--light-grey);
+    }
+    .to-full-list {
+        width: 192px;
+        height: 38px;
+        background-color: var(--basic-red);
+        color: var(--basic-white);
+        font-family: "Cuprum", Arial, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .product-name {
+        font-family: PT Sans, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .old-price {
+        font-family: PT Sans, Arial, sans-serif;;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 18px;
+        color: var(--grey-price);
+    }
+    .price {
+        font-family: PT Sans, Arial, sans-serif;;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 18px;
+        color: var(--basic-white);
+        background-color: var(--basic-red);
+    }
+    .brand-image:hover {
+        filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+    }
+    .brand-image:visited {
+        opacity: 0.5;
+        filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+    }
+    .services {
+        background-color: var(--background-grey);
+    }
+    .services-header {
+        font-family: "Cuprum", Arial, sans-serif;
+        font-size: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+    .services-description {
+        font-family: PT Sans,Arial, sans-serif;
+        font-style: normal;
+        font-size: 13px;
+        line-height: 24px;
+    }
+    .services-item {
+        background-color: var(--dark-blue);
+    }
+    .services-item:hover {
+        background-color: var(--basic-blue);
+    }
+    .services-item:enabled {
+        background-color: var(--basic-white);
+        color: var(--dark-blue);
+    }
+    .delivery-header, .guarantee-header, .credit-header {
+        font-family: "Cuprum", Arial, sans-serif;
+        font-size: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: var(--dark-blue);
+    }
+    .about-header {
+        font-family: "Cuprum", Arial, sans-serif;
+        font-size: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .partners-list{
+        list-style-type: ""
+    }
+    .partners-item {
+        font-family: "Cuprum", Arial, sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        color: var(--basic-black);
+    }
+    .contacts-info-header {
+        font-family: "Cuprum", Arial, sans-serif;
+        font-size: 30px;
+        line-height: 30px;
+        color: var(--basic-black);
+        text-transform: uppercase;
+    }
+    .contacts-description {
+        font-family: PT Sans, Arial, sans-serif;
+        font-size: 13px;
+        line-height: 24px;
+        color: var(--basic-black);
+    }
+   .page-footer {
+       background-color: var(--dark-blue);
+       color: var(--basic-white);
+   }
+   .logo-footer {
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+}
+   .footer-catalog-menu {
+       color: var(--yellow-footer);
+   }
+   .feedback-wrapper {
+    background-color: var(--basic-blue);
+   }
+   .footer-link {
+       color: var(--yellow-footer);
+   }
+
+
+
+
+
+
+
