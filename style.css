@@ -58,11 +58,23 @@
   .menu-wrapper {
     background-color: var(--basic-blue);
     color: var(--basic-white);
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 200px 270px 150px 150px 150px auto;
 }
 
 .logo-wrapper {
     background-color: var(--basic-red);
+    width: 220px;
+    height: 47px;
 }
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 130px;
+      }
+
 
 .menu-list {
     list-style: no-style;
@@ -102,6 +114,15 @@
     color: var(--basic-white);
 }
 
+.features-container {
+    display: grid;
+    margin-bottom: 60px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 123px 123px 123px;
+    gap: 20px;
+}
+
+
 .features {
     color: var(--basic-white);
 }    
@@ -117,7 +138,57 @@
     line-height: 18px;
     background-color: var(--basic-white);
 }
-    
+
+.materials {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.instruments {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.appliances {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.sales {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.delivery {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.perforator {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.drill {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+
 .features-link {
     background-color: rgba(255, 255, 255, 0.3);
     color: var(--basic-white);
@@ -156,7 +227,47 @@
 
 .popular-items-wrapper {
         background-color: var(--light-grey);
+        display: grid;
+        grid-template-columns: 220px 220px 220px 220px;
+        grid-template-rows: 89px 318px;
+        gap: 20px;
+        margin-bottom: 60px;
     }
+
+ .popular-items-wrapper.to-full-list {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    }
+
+.popular-items-list:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.popular-items-list:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.popular-items-list:nth-child(3) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.popular-items-list:nth-child(4) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
 
 .popular-header {
     font-size: 30px;
@@ -197,6 +308,70 @@
         background-color: var(--basic-red);
     }
 
+.brands-wrapper {
+   display: grid;
+   grid-template-columns:  220px 220px 220px 220px;
+   grid-template-rows: auto 145 145;
+   height: 420px;
+   margin-bottom: 60px;
+}    
+
+.brand-list:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.brand-list:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.brand-list:nth-child(3) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.brand-list:nth-child(4) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.brand-list:nth-child(5) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.brand-list:nth-child(6) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.brand-list:nth-child(7) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.brand-list:nth-child(8) {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
 .brand-image:hover {
         filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
     }
@@ -221,7 +396,7 @@
         font-size: 13px;
         line-height: 24px;
     }
-    
+
 .services-item {
         background-color: var(--dark-blue);
     }
@@ -290,10 +465,3 @@
 .footer-link {
        color: var(--yellow-footer);
    }
-
-
-
-
-
-
-
