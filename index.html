@@ -8,45 +8,47 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body class="page-body">
-   <header class="main-header">
-    <div class="menu-wrapper">
-      <div class="logo-wrapper">
-    <a href="" class="main-header-logo">Техномарт</a>
-    </div>
-      <input type="text" name="search" id="search" class="search">Поиск</input>
+    <header class="main-header">
+     <div class="menu-wrapper">
+       <div class="logo-wrapper">
+         <a href="" class="main-header-logo">Техномарт</a>
+       </div>
         <ul class="menu-list">
-          <li class="menu-item"><a href="">Закладки</a></li>
-          <li class="menu-item"><a href="">Корзина</a></li>
-          <li class="menu-item order"><a href="">Оформить заказ</a></li>
+          <li><input type="text" name="search" id="search" class="search">Поиск</input></li>
+           <li class="menu-item"><a href="">Закладки</a></li>
+           <li class="menu-item"><a href="">Корзина</a></li>
+           <li class="menu-item order"><a href="">Оформить заказ</a></li>
         </ul>
         </div>
-        <h1 class="site-header">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-        <section class="contacts">
-          <a href="tel:+78125550555" class="telephone-number">+7 (812) 555-05-55</a>
-          <address class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-        </section>
-        <section class="login">
-          <ul>
-            <li><a href="" class="login-link">Войти</a></li>
-            <li><a href="" class="registration-link">Регистрация</a></li>  
-          </ul>
-        </section>
-        <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li><a href="" class="navigation-link">Главная</a></li>
-          <li><a href="" class="navigation-link">Компания</a></li>
-          <li><a href="catalog.html" class="navigation-link">Каталог</a></li>
-          <li><a href="" class="navigation-link">Новости</a></li>
-          <li><a href="" class="navigation-link">Спецпредложение</a></li>
-          <li><a href="" class="navigation-link">Доставка</a></li>
-          <li><a href="" class="navigation-link">Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
+        <div class="info-container">
+         <h1 class="site-header">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+         <div class="telephone">
+           <a href="tel:+78125550555" class="telephone-number">+7 (812) 555-05-55</a>
+           <address class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+           </div>
+           <div class="client">
+           <ul class="login">
+             <li><a href="" class="login-link">Войти</a></li>
+             <li><a href="" class="registration-link">Регистрация</a></li>  
+           </ul>
+           </div>
+          </div>
+         <nav class="main-navigation">
+         <ul class="site-navigation">
+           <li><a href="" class="navigation-link">Главная</a></li>
+           <li><a href="" class="navigation-link">Компания</a></li>
+           <li><a href="catalog.html" class="navigation-link">Каталог</a></li>
+           <li><a href="" class="navigation-link">Новости</a></li>
+           <li><a href="" class="navigation-link">Спецпредложение</a></li>
+           <li><a href="" class="navigation-link">Доставка</a></li>
+           <li><a href="" class="navigation-link">Контакты</a></li>
+         </ul>
+       </nav>
+     </header>
     <main class="container">
       <div class="features-container">
       <section class="features">
-        <!--<h2>Главное</h2>-->
+        <h2>Главное</h2>
         <ul class="features-list">
           <li class="features-item materials">
             <h3 class="features-header">Материалы</h3>
@@ -68,8 +70,26 @@
             <h3 class="features-header">Доставка</h3>
             <a href="" class="features-link">Бесплатно</a>
           </li>
+          <li class="perforator">
+              <h2 class="slider-header">Перфораторы</h2>
+              <p class="slider-description">Настоящие мужские игрушки</p>
+              <a href="catalog.html">Открыть каталог</a>
+              <button type="button" class="button" disabled>Назад</button>
+              <button type="button" class="button">Вперед</button>
+          </li>
+          <li class="hidden drill">
+              <h2 class="slider-header">Дрели</h2>
+              <p class="slider-description">Соседям на радость!</p>
+              <img src="img/drill.png" width="620" height="266" alt="Дрель"><br>
+              <a href="catalog.html">Открыть каталог</a>
+              <br>
+              <button type="button" class="button forward">Назад</button>
+              <button type="button" class="button back" disabled>Вперед</button>
+          </li>
         </ul>
+      </div>
       </section>
+      <!--
       <section class="slider">
         <div class="perforator">
         <h2 class="slider-header">Перфораторы</h2>
@@ -79,8 +99,7 @@
         <button type="button" class="button" disabled>Назад</button>
         <button type="button" class="button">Вперед</button>
         </div>
-        <!--
-      <div class="drill">
+        <div class="drill">
         <h2 class="slider-header">Дрели</h2>
         <p class="slider-description">Соседям на радость!</p>
         <img src="img/drill.png" width="620" height="266" alt="Дрель"><br>
@@ -89,15 +108,17 @@
         <button type="button" class="button forward">Назад</button>
         <button type="button" class="button back" disabled>Вперед</button>
         </div>
+       </section>
       -->
-      </section>
-      </div>
+
       <section class="popular-items">
-        <div class="popular-items-wrapper">
-        <h2 class="popular-header">Популярные товары</h2>
-        <a href="" class="button to-full-list">Все популярные товары</a>
-        </div>
         <ul class="popular-items-list">
+          <li class="first">
+            <div class="popular-items-wrapper">
+            <h2 class="popular-header popular-items-wrapper ">Популярные товары</h2>
+            <a href="" class="button to-full-list popular-items-wrapper">Все популярные товары</a>
+            </div>
+          </li>
           <li class="popular-items-item">
             <a href="">
             <img src="img/BOSCH BFG 9000.jpg" width="184" height="164" alt= "Перфоратор BOSCHBFG 9000">
@@ -133,10 +154,12 @@
       </div>
       </section>
       <section class="brands">
-        <div class="brands-wrapper">
-        <h2 class="popular-header">Популярные производители</h2>
-        <a href="" class="button to-full-list">Все производители</a>
         <ul class="brand-list">
+          <li class="first">
+            <div class="brands-wrapper popular-items-wrapper">
+            <h2 class="popular-header">Популярные производители</h2>
+            <a href="" class="button to-full-list">Все производители</a>
+          </li>
           <li><a href=""><img class="brand-image" src="img/bosch_logo.jpg" width="220" height="145" alt="Bosch"></a></li>
           <li><a href=""><img class="brand-image" src="img/makita_logo.jpg" width="220" height="145" alt="Makita"></a></li>
           <li><a href=""><img class="brand-image" src="img/dewalt_logo.jpg" width="220" height="145" alt="DeWalt"></a></li>
